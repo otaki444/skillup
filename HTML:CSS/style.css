@@ -23,15 +23,28 @@ header {
 	width: 1024px;
 	margin: 0 auto;
 }
-header li {
+.menu-box {
+	display: none;
+}
+.list-bar {
+	display: none;
+}
+.nav {
+	float: right;
+}
+.nav-list {
 	line-height: 70px;
 	list-style: none;
 	display: inline-block;
-	color: #FAFAFA;
 	font-size: 16px;
 	margin-right: 30px;
 	margin-left: 30px;
-	float: right;
+	float: left;
+	overflow: hidden;
+}
+.nav-list a {
+	color: #FAFAFA;
+	text-decoration: none;
 }
 .main-visual {
 	background-image: url(img/mv.png);
@@ -56,11 +69,12 @@ header li {
 	background-color: #ECEFF1;
 	text-align: center;
 }
-.p-title {
+.title {
 	font-size: 32px;
 	color: #000000;
 	padding-top: 90px;
 	padding-bottom: 8px;
+	text-align: center;
 }
 .border {
 	height: 3px;
@@ -68,13 +82,14 @@ header li {
 	background-color: #EC715F;
 	margin: 0 auto;
 }
-.p-text {
+.text {
 	font-size: 16px;
 	color: #000000;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	text-align: center;
 }
-.p-img {
+.img-group {
 	margin: 0 auto;
 	width: 920px;
 	height: 600px;
@@ -110,4 +125,220 @@ header li {
 }
 .feature {
 	margin: 0 auto;
+}
+.strength-group {
+	width: 980px;
+	margin: 0 auto;
+	padding-bottom: 90px;
+}
+.strength {
+	height: auto;
+	float: left;
+	text-align: center;
+}
+.strength2 {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.icon {
+	font-size: 60px;
+}
+.strength-title {
+	font-size: 20px;
+	color: #000000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.strength-text {
+	font-size: 16px;
+	color: #000000;
+	text-align: left;
+}
+.profile {
+	background-color: #ECEFF1;
+	margin: 0 auto;
+}
+.profile-group {
+	padding-bottom: 90px;
+	width: 1024px;
+	margin: 0 auto;
+}
+.content {
+	width: 512px;
+	float: left;
+}
+.profile-img {
+	background-image: url(img/my-icon.jpg);
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.subtitle {
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+.profile-text {
+	font-size: 16px;
+	color: #000000;
+}
+.myname-text {
+	padding-bottom: 20px;
+}
+.contact {
+	margin: 0 auto;
+}
+.contact-group {
+	width: 800px;
+	padding-bottom: 90px;
+	margin: 0 auto;
+}
+.contact-content {
+	width: 400px;
+	margin:0 auto;
+	float: left;
+}
+.center {
+	margin: 0 auto;
+	width: 50%;
+}
+.tel-title {
+	padding-top: 20px;
+}
+.contact-icon {
+	font-size: 50px;
+}
+.fa-twitter {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+footer {
+	background-color: #EC715F;
+	height: 60px;
+}
+.copyright {
+	font-size: 16px;
+	color: #FAFAFA;
+	line-height: 60px;
+	text-align: center;
+}
+
+@media screen and (max-width:768px) {
+	header {
+		height: 50px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.width {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.logo {
+		height: 50px;
+	}
+	.nav {
+		display: none;
+	}
+	.menu-box {
+		display: block;
+		width: 40px;
+		height: 40px;
+		float: right;
+		border: 1px solid #FAFAFA;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.list-bar {
+		display: block;
+		width: 25px;
+		height: 2px;
+		margin: 5px auto;
+		background-color: #FAFAFA;
+	}
+	.list-bar:first-child {
+		margin-top: 10px;
+	}
+	.main-visual {
+		background-image: url(img/code.png);
+		height: 650px;
+	}
+	.mv-title {
+		font-size: 40px;
+	}
+	.mv-text {
+		font-size: 18px;
+	}
+	.img-group {
+		width: 90%;
+		height: auto;
+	}
+	.img {
+		float: none;
+		margin: 0 auto;
+	}
+	.img1 {
+		display: none;
+	}
+	.img3 {
+		display: none;
+	}
+	.img4 {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.img5 {
+		display: none;
+	}
+	.text {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.strength-group {
+		width: 90%;
+		margin:0 auto;
+	}
+	.strength {
+		float: none;
+		width: 320px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	.strength:last-child {
+		margin-bottom: 0;
+	}
+	.profile-group {
+		width: 90%;
+	}
+	.content {
+		float: none;
+		margin: 0 auto;
+	}
+	.subtitle {
+		padding-top: 20px;
+		text-align: center;
+	}
+	.profile-text {
+		text-align: center;
+	}
+	.myname-text {
+		padding-bottom: 0;
+	}
+	.contact-group {
+		float: none;
+		width: 90%;
+	}
+	.contact-content {
+		float: none;
+	}
+	.center {
+		text-align: center;
+	}
+	.c-link {
+		text-align: center;
+	}
+	.fa-twitter {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
 }
